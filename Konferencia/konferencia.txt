@@ -1,0 +1,8 @@
+Babits Mihály gondolati lírája (Tóth Miklós)3;6System.Int32[,]
+
+Petőfi Sándor hatása az utókorra (Kovács Pál)5;6System.Int32[,]
+
+Móricz Zsigmond titkos szerelme (Mészáros Panna)4;9System.Int32[,]
+
+Esterházy Péter zsengéiről (Lukovcez Hanna)5;7System.Int32[,]
+
