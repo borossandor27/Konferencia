@@ -103,21 +103,22 @@ namespace Konferencia
 
         private void button_Mentes_Click(object sender, EventArgs e)
         {
-            File.Copy(@"..\..\konferencia.txt", @"..\..\konferencia.bak", true);
+            File.Copy(@"konferencia.txt", @"konferencia.bak", true);
             try
             {
-                using (StreamWriter sw = new StreamWriter(@"..\..\konferencia.txt"))
+                using (StreamWriter sw = new StreamWriter(@"konferencia.txt"))
                 {
                     foreach (Eloadas item in konferencia.Eloadasok)
                     {
                         sw.WriteLine(item);
                     }
                 }
+                MessageBox.Show("Sikres mentés!");
             }
             catch (Exception)
             {
 
-                throw;
+                MessageBox.Show("Sikertelen mentés!");
             }
         }
     }

@@ -28,10 +28,19 @@ namespace Konferencia
 
         public override string ToString()
         {
-            string vissza = this.cim;
-            vissza += sorDb + ";" + helyDb;
-            vissza += string.Join(";", ertekeles);
-            vissza += "\n";
+            string sorveg = "\n";
+            string vissza = this.cim + sorveg;
+            vissza += sorDb + ";" + helyDb + sorveg;
+            for (int i = 0; i < sorDb; i++)
+            {
+                for (int j = 0; j < HelyDb; j++)
+                {
+                    vissza += ertekeles[i, j] + ";";
+
+                }
+                vissza = vissza.Substring(0, vissza.Length - 1) + sorveg;
+            }
+            vissza += sorveg;
             return vissza;
         }
     }
