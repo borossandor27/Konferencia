@@ -53,7 +53,8 @@ namespace Konferencia
                     gomb.FlatAppearance.MouseOverBackColor = Color.Transparent;
                     gomb.BackColor = Color.Transparent;
                     gomb.BackgroundImageLayout = ImageLayout.Stretch;
-                    gomb.BackgroundImage = Image.FromFile(filename: @"..\..\Kepek\Pont" + konferencia.Eloadasok[EloadasSzam].Ertekeles[i, j] + ".jpg");
+                    //gomb.BackgroundImage = Image.FromFile(filename: @"..\..\Kepek\Pont" + konferencia.Eloadasok[EloadasSzam].Ertekeles[i, j] + ".jpg");
+                    gomb.BackgroundImage = Image.FromFile(filename: @"..\..\Kepek\Pont" + konferencia.Eloadasok[EloadasSzam].Ertekeles[i, j] + ".png");
                     gomb.Tag = string.Join(";", konferencia.Eloadasok[EloadasSzam].Ertekeles[i, j], i, j);
                     gomb.Height = 40;
                     gomb.Width = 40;
